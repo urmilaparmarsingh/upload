@@ -24,7 +24,7 @@ public class UploadRestAPI {
 	
 	
 	@PostMapping(value = "/upload")
-	public String getCurrentAccount(@RequestParam("file") MultipartFile file ) {
+	public String uploadFile(@RequestParam("file") MultipartFile file ) {
 		
 		String fileName = null;
     	if (!file.isEmpty()) {
